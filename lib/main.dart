@@ -62,8 +62,17 @@ class _MyDatePickerState extends State<MyDatePicker> {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            Image.asset(
+              'assets/images/image1.jpg',
+              height: 300,
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
+            const SizedBox(
+              height: 20,
+            ),
             Text(
               //"Selected Date : ${DateFormat('yyyy-MM-dd').format(selectedDate)}",
               // "Selected Date : ${selectedDate.toString().split(' ')[0]}", // both format same work,
